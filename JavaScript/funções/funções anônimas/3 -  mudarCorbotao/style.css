@@ -1,0 +1,18 @@
+.botao {
+            padding: 12px 24px;
+            font-size: 16px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .botaoOff {
+            background-color: #f0f0f0;
+            color: #333;
+        }
+
+        .botaoOn {
+            background-color: #333;
+            color: #fff;
+        }
