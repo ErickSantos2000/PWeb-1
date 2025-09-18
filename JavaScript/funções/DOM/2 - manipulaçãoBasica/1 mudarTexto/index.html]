@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manipulação basica</title>
+</head>
+<body>
+    <input id="input" type="text" placeholder="Informe o texto">
+    <button id = "botaoTexto">Mudar texto</button>
+    <p id = "paragrafo">Texto a ser mudado</p>
+</body>
+    <script src="./script.js"></script>
+</html>
