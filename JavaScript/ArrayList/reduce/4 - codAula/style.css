@@ -1,0 +1,55 @@
+/* Estilo geral da página */
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Títulos */
+h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Lista desordenada */
+ul#letras {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+ul#letras li {
+    background-color: #e0f7fa;
+    margin: 5px 0;
+    padding: 8px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* Container de cards */
+div#cards {
+    display: flex;
+    gap: 10px; /* espaço entre os cards */
+    flex-wrap: wrap; /* quebra linha quando não cabe */
+}
+
+/* Card individual */
+.card {
+    background-color: #afafaf;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    width: 100px;
+    text-align: center;
+    box-shadow: 2px 2px 6px rgba(194, 183, 183, 0.1);
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 10px;
+    font-weight: bold;
+    color: #00796b;
+}
