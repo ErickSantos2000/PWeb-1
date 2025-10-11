@@ -2,8 +2,8 @@
 // Desestruture nome, idade e curso (valor padrão: "Desconhecido")
 // Retorne uma string "Aluno: X, Idade: Y, Curso: Z"
 
-function infoAluno(/* desestruturação */) {
-  // código aqui
+function infoAluno({nome, idade, curso = "Desconhecido"}) {
+  return `Nome: ${nome}\nIdade: ${idade}\nCurso: ${curso}`
 }
 
 console.log(infoAluno({ nome: "Pedro", idade: 21 }));
