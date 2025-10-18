@@ -1,6 +1,6 @@
 // Objeto inicial
         let pessoa = {
-            nome: "none",
+            nome: "nenhum",
             idade: 0
         };
 
@@ -10,34 +10,34 @@
         const novaIdadeInput = document.getElementById("novaIdade");
         const registro = document.getElementById("registrar");
 
+        function atualizaDOM({nome, idade}){
+            nomeDOM.textContent = `Nome : ${nome}`;
+            idadeDOM.textContent = `Idade : ${idade}`;  
+        }
+
         // inicializa o DOM com os dados do obj pessoa
-        const {nome, idade} = pessoa
-        nomeDOM.textContent = `Nome : ${nome}`;
-        idadeDOM.textContent = `Idade : ${idade}`;  
+        atualizaDOM(pessoa);
 
-        registro.addEventListener("click", () => {
-            // pessoa com novos valores
-            const novaPessoa = {};
+        function atualizaOBJ(){
+            // obj auxiliar
+            const pessoaAuxiliar = {};
 
-            if (novoNomeInput.value) {
-                novaPessoa.nome = novoNomeInput.value;
+             if (novoNomeInput.value) {
+                pessoaAuxiliar.nome = novoNomeInput.value;
             }
 
             if (novaIdadeInput.value) {
-                novaPessoa.idade = novaIdadeInput.value;
+                pessoaAuxiliar.idade = novaIdadeInput.value;
             }
 
-            // passa as novas informações 
-            pessoa = { ...pessoa, ...novaPessoa };
+            // atualizando obj pessoa com as novas informções 
+            pessoa = { ...pessoa, ...pessoaAuxiliar };
 
             // atualizando o DOM
-            const {nome, idade} = pessoa
-
-            nomeDOM.textContent = `Nome : ${nome}`;
-            idadeDOM.textContent = `Idade : ${idade}`;   
-
-            //
+            atualizaDOM(pessoa);
+            
             novoNomeInput.value = "";
             novaIdadeInput.value = "";  
+        }
 
-            });
+        registro.addEventListener("click", atualizaOBJ);
