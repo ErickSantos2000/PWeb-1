@@ -1,0 +1,22 @@
+body{
+    background-color: black;
+    
+}
+
+p{
+    color: azure;
+}
+
+h3{
+    color: rgb(93, 233, 233);
+}
+
+input{
+    background-color: black;
+    color: azure;
+}
+
+button{
+    background-color: black;
+    color: azure;
+}
